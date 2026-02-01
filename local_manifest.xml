@@ -5,8 +5,8 @@
 	    clone-depth="1" />
 
  <!-- Device -->
- <project path="device/tecno/LG8n" name="android_device_tecno_LG8n" remote="MillenniumOSS" revision="lineage-23.1" />
- <project path="device/tecno/LG7n" name="android_device_tecno_LG7n" remote="MillenniumOSS" revision="lineage-23.1" />
+ <project path="device/tecno/LG8n" name="android_device_tecno_LG8n" remote="MillenniumOSS" revision="lineage-23.2" />
+ <project path="device/tecno/LG7n" name="android_device_tecno_LG7n" remote="MillenniumOSS" revision="lineage-23.2" />
  <project path="device/tecno/mt6789-common" name="android_device_tecno_mt6789-common" remote="MillenniumOSS" revision="sixteen" />
 
  <!-- Kernel -->
@@ -31,7 +31,7 @@
  <!-- Device Support stuffs -->
  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="MillenniumOSS" revision="sixteen" />
  <project path="hardware/millennium" name="android_hardware_millennium" remote="MillenniumOSS" revision="sixteen" />
- <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen"/>
- <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen" />
- <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="MillenniumOSS" revision="lineage-23.1" />
+ <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2"/>
+ <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-qpr2" />
+ <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="MillenniumOSS" revision="lineage-23.2" />
 </manifest>
