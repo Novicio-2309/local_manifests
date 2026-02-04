@@ -3,19 +3,19 @@
    <remote name="MillenniumOSS"
 	    fetch="https://github.com/MillenniumOSS"
 	    clone-depth="1" />
+   <remote name="rem"
+            fetch="https://github.com/Novicio-2309"
+            clone-depth="1" />
 
  <!-- Device -->
- <project path="device/tecno/LG8n" name="android_device_tecno_LG8n" remote="MillenniumOSS" revision="lineage-23.2" />
  <project path="device/tecno/LG7n" name="android_device_tecno_LG7n" remote="MillenniumOSS" revision="lineage-23.2" />
  <project path="device/tecno/mt6789-common" name="android_device_tecno_mt6789-common" remote="MillenniumOSS" revision="sixteen" />
 
  <!-- Kernel -->
- <project path="device/tecno/LG8n-kernel" name="android_device_tecno_LG8n-kernel" remote="MillenniumOSS" revision="sixteen-mck" />
  <project path="device/tecno/LG7n-kernel" name="android_device_tecno_LG7n-kernel" remote="MillenniumOSS" revision="sixteen-mck" />
  <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-vanilla" />
 
  <!--Vendor -->
- <project path="vendor/tecno/LG8n" name="android_vendor_tecno_LG8n" remote="MillenniumOSS" revision="sixteen-bp3a" />
  <project path="vendor/tecno/LG7n" name="android_vendor_tecno_LG7n" remote="MillenniumOSS" revision="sixteen-bp3a" />
  <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="sixteen" />
 
