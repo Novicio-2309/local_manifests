@@ -17,7 +17,7 @@
 
  <!--Vendor -->
  <project path="vendor/tecno/LG7n" name="android_vendor_tecno_LG7n" remote="MillenniumOSS" revision="sixteen-bp3a" />
- <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="sixteen" />
+ <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="bka" />
 
  <!-- Dolby -->
  <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="MillenniumOSS" revision="sixteen-expressive" />
