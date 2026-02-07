@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-   <remote name="MillenniumOSS"
-	    fetch="https://github.com/MillenniumOSS"
-	    clone-depth="1" />
-   <remote name="rem"
-            fetch="https://github.com/Novicio-2309"
-            clone-depth="1" />
+<resources>
+  <project path="device/xiaomi/amethyst" name="Novicio-2309/android_device_xiaomi_amethyst" remote="github" revision="vos-16.2" />
 
- <!-- Device -->
- <project path="device/tecno/LG7n" name="android_device_tecno_LG7n" remote="rem" revision="Evox16Qpr2" />
- <project path="device/tecno/mt6789-common" name="android_device_tecno_mt6789-common" remote="MillenniumOSS" revision="sixteen-qpr2" />
+  <project path="vendor/xiaomi/amethyst" name="Novicio-2309/android_vendor_proprietary_amethyst" remote="github" revision="vos-16.2" />
 
- <!-- Kernel -->
- <project path="device/tecno/LG7n-kernel" name="android_device_tecno_LG7n-kernel" remote="MillenniumOSS" revision="sixteen-mck" />
- <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-vanilla" />
-
- <!--Vendor -->
- <project path="vendor/tecno/LG7n" name="android_vendor_tecno_LG7n" remote="MillenniumOSS" revision="sixteen-bp3a" />
- <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="bka" />
-
- <!-- Dolby -->
- <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="MillenniumOSS" revision="sixteen-expressive" />
-
- <!--JamesDSP -->
- <project path="vendor/JamesDSP" name="android_vendor_JamesDSP" remote="MillenniumOSS" revision="sixteen" />
-
- <!-- Remove external/wpa_supplicant_8 in favor of our fork -->
- <remove-project path="external/wpa_supplicant_8" />
-
- <!-- Device Support stuffs -->
- <project path="hardware/mediatek" name="android_hardware_mediatek" remote="MillenniumOSS" revision="sixteen" />
- <project path="hardware/millennium" name="android_hardware_millennium" remote="MillenniumOSS" revision="sixteen" />
- <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2"/>
- <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-qpr2" />
- <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="MillenniumOSS" revision="lineage-23.2" />
-</manifest>
+  <project path="hardware/xiaomi" name="Novicio-2309/android_hardware_xiaomi" remote="github" revision="lineage-23.0" />
+</resources>
