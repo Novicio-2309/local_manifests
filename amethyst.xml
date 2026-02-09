@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="Novicio-2309/android_device_xiaomi_amethyst" path="device/xiaomi/amethyst" remote="github" revision="main" />
+
+  <project name="Novicio-2309/android_vendor_xiaomi_amethyst" path="vendor/xiaomi/amethyst" remote="github" revision="main" />
+
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-22.1" />
+</manifest>
