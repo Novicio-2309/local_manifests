@@ -20,7 +20,7 @@
  <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="bka" />
 
  <!-- Dolby -->
- <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="MillenniumOSS" revision="sixteen-expressive" />
+ <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="MillenniumOSS" revision="sixteen-redesign" />
 
  <!--JamesDSP -->
  <project path="vendor/JamesDSP" name="android_vendor_JamesDSP" remote="MillenniumOSS" revision="sixteen" />
