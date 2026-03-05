@@ -13,7 +13,7 @@
 
  <!-- Kernel -->
  <project path="device/tecno/LG7n-kernel" name="android_device_tecno_LG7n-kernel" remote="MillenniumOSS" revision="sixteen-mck" />
- <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-vanilla" />
+ <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-qpr2" />
 
  <!--Vendor -->
  <project path="vendor/tecno/LG7n" name="android_vendor_tecno_LG7n" remote="MillenniumOSS" revision="sixteen-bp3a" />
