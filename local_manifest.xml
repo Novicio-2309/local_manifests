@@ -19,18 +19,16 @@
  <project path="vendor/tecno/LG7n" name="android_vendor_tecno_LG7n" remote="MillenniumOSS" revision="sixteen-bp3a" />
  <project path="vendor/tecno/mt6789-common" name="android_vendor_tecno_mt6789-common" remote="MillenniumOSS" revision="bka" />
 
- <!-- Dolby -->
- <project path="vendor/sony/dolby" name="android_vendor_sony_dolby" remote="MillenniumOSS" revision="sixteen-redesign" />
-
  <!--JamesDSP -->
  <project path="vendor/JamesDSP" name="android_vendor_JamesDSP" remote="MillenniumOSS" revision="sixteen" />
 
- <!-- Remove external/wpa_supplicant_8 in favor of our fork -->
- <remove-project path="external/wpa_supplicant_8" />
-
+ <!-- Remove Projects -->
+ <remove-project path="packages/apps/Aperture" />
+	
  <!-- Device Support stuffs -->
  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="MillenniumOSS" revision="sixteen" />
  <project path="hardware/millennium" name="android_hardware_millennium" remote="MillenniumOSS" revision="sixteen" />
- <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen"/>
+ <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2-rebase"/>
  <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-oem" />
+ <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="MillenniumOSS" revision="lineage-23.2" />
 </manifest>
