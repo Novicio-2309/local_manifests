@@ -16,10 +16,6 @@
  <!--Vendor -->
  <project path="vendor/xiaomi/amethyst" name="android_vendor_xioami_amethyst" remote="amethyst-playground" revision="lineage-23.2" />
 	
- <!--JamesDSP -->
- <project path="vendor/JamesDSP" name="android_vendor_JamesDSP" remote="MillenniumOSS" revision="sixteen" />
-
-
  <!-- Device Support stuffs -->
  <project path="hardware/xiaomi" name="android_hardware_xioami" remote="amethyst-playground" revision="lineage-23.2" />
  <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" remote="amethyst-playground" revision="lineage-23.2-caf-sm8650"/>
