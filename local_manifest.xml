@@ -13,4 +13,6 @@
   <project path="vendor/xiaomi/amethyst" name="proprietary_vendor_xiaomi_amethyst" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
 
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
+
+  <project path="hardware/dolby" name="LineageOS-extra/android_hardware_dolby" remote="github" revision="lineage-23.2" clone-depth="1" />
 </manifest>
