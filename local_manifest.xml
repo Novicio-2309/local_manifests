@@ -14,5 +14,5 @@
 
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
 
-  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
+  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="novicio" revision="lineage-23.2" clone-depth="1" />
 </manifest>
