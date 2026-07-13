@@ -6,11 +6,11 @@
   <remote name="novicio"
           fetch="https://github.com/Novicio-2309" />
 
-  <project path="device/xiaomi/amethyst" name="android_device_xiaomi_amethyst" remote="novicio" revision="Infinity16" clone-depth="1" />
+  <project path="device/xiaomi/amethyst" name="android_device_xiaomi_amethyst" remote="novicio" revision="yaap16" clone-depth="1" />
 
   <project path="device/xiaomi/amethyst-kernel" name="android_device_xiaomi_amethyst-kernel" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
 	
-  <project path="vendor/xiaomi/amethyst" name="proprietary_vendor_xiaomi_amethyst" remote="novicio" revision="lineage-23.2" clone-depth="1" />
+  <project path="vendor/xiaomi/amethyst" name="proprietary_vendor_xiaomi_amethyst" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
 
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="amethyst-playground" revision="lineage-23.2" clone-depth="1" />
 
