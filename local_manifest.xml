@@ -16,6 +16,6 @@
 
   <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="novicio" revision="lineage-23.2" clone-depth="1" />
 
-  <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="novicio" revision="lineage-23.2" clone-depth="1" />
+  <project path="hardware/dolby" name="hardware_dolby" remote="novicio" revision="lineage-23.2" clone-depth="1" />
 
 </manifest>
