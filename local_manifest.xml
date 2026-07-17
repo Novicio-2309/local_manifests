@@ -10,7 +10,7 @@
 
   <project path="device/xiaomi/amethyst-kernel" name="device_xiaomi_amethyst-kernel" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 	
-  <project path="vendor/xiaomi/amethyst" name="proprietary_vendor_xiaomi_amethyst" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
+  <project path="vendor/xiaomi/amethyst" name="vendor_xiaomi_amethyst" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 
