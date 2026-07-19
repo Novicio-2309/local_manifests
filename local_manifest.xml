@@ -6,7 +6,7 @@
   <remote name="novicio"
           fetch="https://github.com/Novicio-2309" />
 
-  <project path="device/xiaomi/amethyst" name="device_xiaomi_amethyst" remote="novicio" revision="Infinity16" clone-depth="1" />
+  <project path="device/xiaomi/amethyst" name="device_xiaomi_amethyst" remote="novicio" revision="Avium16" clone-depth="1" />
 
   <project path="device/xiaomi/amethyst-kernel" name="device_xiaomi_amethyst-kernel" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 	
