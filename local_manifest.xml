@@ -14,7 +14,7 @@
 
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 
-  <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
+  <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
 
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
 </manifest>
