@@ -17,4 +17,6 @@
   <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
 
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="lineage-23.2" clone-depth="1" />
+
+  <project path="vendor/xiaomi/miuicamera" name="vendor-xiaomi-amethyst-miuicamera" remote="novicio" revision="main" clone-depth="1" />
 </manifest>
