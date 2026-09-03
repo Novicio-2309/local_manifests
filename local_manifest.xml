@@ -19,4 +19,6 @@
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="sixteen" clone-depth="1" />
 
   <project path="device/xiaomi/amethyst-miuicamera" name="device_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="sixteen" clone-depth="1" />
+  
+  <project path="vendor/xiaomi/amethyst-miuicamera" name="vendor_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="sixteen" clone-depth="1" />
 </manifest>
