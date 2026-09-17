@@ -21,8 +21,4 @@
   <project path="device/xiaomi/amethyst-miuicamera" name="device_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" clone-depth="1" />
 
   <project path="vendor/xiaomi/amethyst-miuicamera" name="vendor_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" clone-depth="1" />
-
-  <remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
-  
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" clone-depth="1" />
 </manifest>
