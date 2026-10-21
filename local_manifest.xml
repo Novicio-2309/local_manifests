@@ -19,7 +19,7 @@
   <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
   <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
 
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" remote="bluedmc" revision="sixteen-sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" />
 
   <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="seventeen" />
