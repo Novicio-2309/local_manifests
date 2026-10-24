@@ -22,6 +22,7 @@
 
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" />
 
+  <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="seventeen" />
   <project path="device/xiaomi/amethyst-miuicamera" name="device_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" />
   <project path="vendor/xiaomi/amethyst-miuicamera" name="vendor_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" />
