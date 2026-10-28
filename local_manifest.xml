@@ -21,7 +21,7 @@
   <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
 
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" />
-  <project path="device/qcom/sepolicy_vndr" name="LineageOS/android_device_qcom_sepolicy_vndr" remote="github" revision=lineage-24.0-caf-sm8650" />
+  <project path="device/qcom/sepolicy_vndr" name="LineageOS/android_device_qcom_sepolicy_vndr" remote="github" revision="lineage-24.0-caf-sm8650" />
   
   <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="seventeen" />
