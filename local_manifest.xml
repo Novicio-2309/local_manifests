@@ -12,20 +12,76 @@
   <project path="vendor/xiaomi/amethyst" name="vendor_xiaomi_amethyst" remote="bluedmc" revision="seventeen" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="bluedmc" revision="seventeen" />
 
-  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-
-  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage24" revision="lineage-24.0-caf-sm8650" />
-
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" />
   
   <project path="vendor/JamesDSP" name="vendor_JamesDSP" remote="novicio" revision="lineage-23.2" clone-depth="1" />
-  <project path="vendor/bcr" name="Chaitanyakm/vendor_bcr" remote="github" revision="main" clone-depth="1" />
   <project path="packages/apps/LunarisDolby" name="packages_apps_LunarisDolby" remote="bluedmc" revision="seventeen" />
   <project path="device/xiaomi/amethyst-miuicamera" name="device_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" />
   <project path="vendor/xiaomi/amethyst-miuicamera" name="vendor_xiaomi_amethyst-miuicamera" remote="bluedmc" revision="seventeen" />
+
+  <remove-project name="platform_vendor_qcom_opensource_audio-hal_st-hal-ar" />
+  <remove-project name="platform_vendor_qcom_opensource_display-commonsys-intf" />
+  <remove-project name="platform_vendor_qcom_opensource_display-commonsys" />
+  <remove-project name="platform_vendor_qcom_opensource_dataservices" />
+  <remove-project name="platform_vendor_qcom_opensource_display" />
+  <remove-project name="platform_vendor_qcom_opensource_interfaces" />
+  <remove-project name="platform_vendor_qcom_opensource_power" />
+  <remove-project name="platform/vendor/qcom-opensource/thermal-engine" />
+  <remove-project name="platform_vendor_qcom_opensource_vibrator" />
+  <remove-project name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
+
+    <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,pakala-audio" remote="lineage" />
+    <project path="vendor/qcom/opensource/audio-hal/st-hal-ar-legacy" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,lanai-audio" revision="lineage-24.0-legacy" remote="lineage" />
+    <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="lineage" />
+    <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="lineage" />
+    <!-- <project path="vendor/qcom/opensource/commonsys/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pakala-video" remote="lineage" /> -->
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-24.0-legacy-um" remote="lineage" />
+    <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom,pakala-vendor" remote="lineage" />
+    <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" groups="qcom" remote="lineage" />
+    <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="lineage" />
+    <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pakala-vendor" remote="lineage" />
+    <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pakala-vendor" remote="lineage" />
+    <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="lineage" />
+
+    <!-- HALs -->
+    <remove-project name="platform_hardware_qcom-caf_common" />
+    <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="miku" >
+        <!-- add guard for AOSP hardware/qcom dir -->
+        <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+        <!-- for AOSP sdm845 and sm8150, we override os_pickup.mk -->
+        <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+        <!-- add guards for CAF repositories -->
+        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
+    </project>
+
+    <!-- HALS -->
+    <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom,lanai-audio" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" groups="qcom" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom,lanai-audio" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" groups="qcom,lanai-audio" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lanai-vendor" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" groups="qcom,lanai-vendor" revision="lineage-24.0-caf-sm8650" remote="lineage" />
+    <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" groups="qcom" revision="lineage-24.0-caf-sm8650" remote="lineage" />
 </manifest>
