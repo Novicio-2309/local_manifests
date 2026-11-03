@@ -25,6 +25,4 @@
   <remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
   
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" remote="bluedmc" revision="seventeen-sm8650" clone-depth="1" />
-
-  <project name="Novicio-2309/android_vendor_gms" path="vendor/gms" remote="github" revision="seventeen" />
 </manifest>
