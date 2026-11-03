@@ -3,7 +3,6 @@
 <manifest>
   <remote name="novicio" fetch="https://github.com/Novicio-2309/" />
   <remote name="bluedmc" fetch="https://github.com/BluedMC-Amethyst/" />
-  <remote name="github" fetch="https://github.com/" />
   
   <project path="device/xiaomi/amethyst" name="device_xiaomi_amethyst" remote="novicio" revision="Miku17" />
 
